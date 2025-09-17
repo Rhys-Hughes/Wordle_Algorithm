@@ -56,4 +56,4 @@ However, it can decipher the most commonly structured word.
 In doing this, the player is more likely to enter a word that has at least one correct letter (be it green or yellow)
 This means that, if of the available words left to a user, 50% of them begin with an R, logically, your next word should begin with an R, and if of them, 50% had the next letter A, you should choose a word that goes RA.
 
-This algorithm is quite crude, and i'm sure a statistician would have a word or two to say about my methods, but it was a fun and interesting exercise.
+This algorithm is quite crude, and does not work particularly well, but it is a lot faster than a human brain, and finds the word the majority of the time. I'm sure a statistician would have a word or two to say about my methods, but it was a fun and interesting exercise.
