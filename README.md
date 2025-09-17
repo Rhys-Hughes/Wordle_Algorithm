@@ -6,10 +6,15 @@ Works by:
 -Taking an input of the 5 letter word entered
 
 -inputting numbers for each letter depending on the result in wordle, where:
+
       -1 = correct (green)
+      
       -2 = correct in the wrong place (yellow)
+      
       -0 = incorrect (grey)
+      
       so for example, the word "ailed" might return ->Green(a), Yellow(i), Grey(l), Grey(e), Yellow(d)
+      
       so you would enter "ailed", then "12002"
 
 -The algorithm itself works by taking a word list and calculating the probability of a letter appearing in each spot, this gives a weight to each letter in each position
