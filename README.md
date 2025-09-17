@@ -19,21 +19,21 @@ Works by:
 
 -The algorithm itself works by taking a word list and calculating the probability of a letter appearing in each spot, this gives a weight to each letter in each position
 
--Each word then has a commonality generated as the product of all of it's letter weighting, for example:
+-Each word then has a commonality generated as the average weight of all the letters
 
       - word "ailed"
       
-      - a in 1st = 0.05 (5%)
+      - a in 1st = 5%
       
-      - i in 2nd = 0.02 (2%)
+      - i in 2nd = 2%
       
-      - l in 3rd = 0.06 (6%)
+      - l in 3rd = 6%
       
-      - e in 4th = 0.01 (1%)
+      - e in 4th = 1%
       
-      - d in 5th = 0.03 (3%)
+      - d in 5th = 3%
        
-      commonality of "ailed" = 0.05 * 0.02 * 0.06 * 0.01 * 0.03 = x
+      commonality of "ailed" = (5 + 2 + 6 + 1 + 3) / 5 = 3.4
 
 -The commonality of each word is calculated when the program is first ran, or can be calculated after each cycle, both work reasonably well.
 
