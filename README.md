@@ -15,12 +15,19 @@ Works by:
 -The algorithm itself works by taking a word list and calculating the probability of a letter appearing in each spot, this gives a weight to each letter in each position
 
 -Each word then has a commonality generated as the product of all of it's letter weighting, for example:
+
       - word "ailed"
+      
       - a in 1st = 0.05 (5%)
+      
       - i in 2nd = 0.02 (2%)
+      
       - l in 3rd = 0.06 (6%)
+      
       - e in 4th = 0.01 (1%)
+      
       - d in 5th = 0.03 (3%)
+       
       commonality of "ailed" = 0.05 * 0.02 * 0.06 * 0.01 * 0.03 = x
 
 -The commonality of each word is calculated when the program is first ran, or can be calculated after each cycle, both work reasonably well.
@@ -38,6 +45,7 @@ Works by:
 
 ---
 NOTES
+
 This algorithm doesn't nescesarily solve for the most likely word, as this is somewhat impossible, as the word is functionally random.
 However, it can decipher the most commonly structured word.
 In doing this, the player is more likely to enter a word that has at least one correct letter (be it green or yellow)
